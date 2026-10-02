@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.typefox",
+  "date": "2026-10-01",
+  "source": {
+    "url": "https://github.com/TypeFox/agent-skills.git",
+    "path": "skills/*"
+  }
+}

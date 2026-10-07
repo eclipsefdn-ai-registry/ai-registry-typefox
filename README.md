@@ -7,8 +7,9 @@ Vendor repository for the [AI Registry](https://github.com/eclipsefdn-ai-registr
 | File | Artifacts |
 | :--- | :-------- |
 | [`skills/io.github.typefox.json`](skills/io.github.typefox.json) | All skills under `skills/` in [TypeFox/agent-skills](https://github.com/TypeFox/agent-skills), published as `io.github.typefox/<skill-name>` |
+| [`skills/io.github.eclipse-langium.json`](skills/io.github.eclipse-langium.json) | All skills under `skills/` in [eclipse-langium/langium-ai](https://github.com/eclipse-langium/langium-ai), published as `io.github.eclipse-langium/<skill-name>` |
 
-The skills approval uses a glob and tracks the default branch, so a skill added to `TypeFox/agent-skills` is picked up by the next consolidation run without a change here.
+The skills approvals use a glob and track the default branch, so a skill added to the source repo is picked up by the next consolidation run without a change here.
 
 ## Contributing
 

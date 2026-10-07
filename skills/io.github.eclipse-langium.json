@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.eclipse-langium",
+  "date": "2026-10-07",
+  "source": {
+    "url": "https://github.com/eclipse-langium/langium-ai.git",
+    "path": "skills/*"
+  }
+}

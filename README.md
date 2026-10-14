@@ -7,9 +7,12 @@ Vendor repository for the [AI Registry](https://github.com/eclipsefdn-ai-registr
 | File | Artifacts |
 | :--- | :-------- |
 | [`skills/io.github.typefox.json`](skills/io.github.typefox.json) | All skills under `skills/` in [TypeFox/agent-skills](https://github.com/TypeFox/agent-skills), published as `io.github.typefox/<skill-name>` |
+| [`skills/io.github.typefox--write-baukasten.json`](skills/io.github.typefox--write-baukasten.json) | The `write-baukasten` skill in [TypeFox/baukasten](https://github.com/TypeFox/baukasten), published as `io.github.typefox/write-baukasten` |
 | [`skills/io.github.eclipse-langium.json`](skills/io.github.eclipse-langium.json) | All skills under `skills/` in [eclipse-langium/langium-ai](https://github.com/eclipse-langium/langium-ai), published as `io.github.eclipse-langium/<skill-name>` |
 
-The skills approvals use a glob and track the default branch, so a skill added to the source repo is picked up by the next consolidation run without a change here.
+The `agent-skills` and `langium-ai` approvals use a glob and track the default branch, so a skill added to those repos is picked up by the next consolidation run without a change here.
+
+Skills that live in other TypeFox repositories still get the `io.github.typefox/<skill-name>` ID, but that prefix is already claimed by the `agent-skills` glob and an approval file can only point at one repository. Each such skill therefore gets its own single-skill approval file named `io.github.typefox--<skill-name>.json`, with `source.path` pointing at the skill folder.
 
 ## Contributing
 
